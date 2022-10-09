@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>TPA 2 BMI Check</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h4>Check Your BMI</h4>
+        <p>Masukkan Berat Dan Tinggi Anda Untuk Mengecek Hasil BMI Anda</p>
+        <div>
+        <form action="" method="post" id="form-pendaftaran">    
+            <div class="form-group" id="weight">
+                <label for="">Put Your Weight In Here (KG) : </label>
+                <input type="text" id="berat-badan" placeholder="60" required >
+            </div>
+            <div class="form-group" id="height">
+                <label for="">Put Your Height In Here (CM) : </label>
+                <input type="text" id="tinggi-badan" placeholder="150" required >
+            </div>
+            <div class="container">
+                <div class="form-group">
+                    <button class="button" type="submit">submit</button>
+                </div>
+                <div class="form-group">
+                    <button class="button" onclick="resetForm()">reset</button>
+                </div>
+            </div>
+        </form>
+        <p id="result"></p>
+    </div>
+    </div>
+    <script src="tpa-2.js"></script>
+</body>
+</html>
